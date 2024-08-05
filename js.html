@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Number!!!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      button:active {
+        transform: translateY(4px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper w-[100vw] h-[100vh] bg-blue-400">
+      <h1 class="flex font-bold md:text-4xl justify-center py-5 text-2xl">
+        Welcome To The Game!!!
+      </h1>
+      <h2
+        class="flex font-semibold md:text-3xl justify-center py-5 text-xl text-center"
+      >
+        "You Have To choose The Number Between 1 To 100"
+      </h2>
+      <div class="flex flex-col items-center gap-y-5">
+        <h3 class="text-xl font-bold">Enter The Guess Number</h3>
+        <input
+          type="number"
+          placeholder="000"
+          min="0"
+          max="100"
+          class="w-14 h-14 text-2xl p-2"
+          
+        />
+        <button
+          id="press"
+          class="bg-blue-600 p-3 font-semibold hover:bg-blue-900 hover:text-white"
+        >
+          Guess!
+        </button>
+        <div class="flex font-bold gap-x-2">
+          <p>Attempts :</p>
+          <p class="text-lg" id="attempt">0</p>
+        </div>
+        <p id="desc" class="font-bold text-xl text-center">
+          "Let's Go,Your destiny is with you."
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="guess.js"></script>
+</html>
