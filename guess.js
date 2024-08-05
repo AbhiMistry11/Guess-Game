@@ -19,7 +19,7 @@ function startGame() {
     } else if (userNum < cpuNum) {
       quoteDesc.innerText = "Very Low, Try Again!!";
     } else {
-      quoteDesc.innerText = `Congratulations! You guessed the number In ${attempts} attempts.`;
+      quoteDesc.innerText = `Congratulations! You guessed the number In ${attempts} Failed attempts.`;
     }
     attempts++;
   AttemptTry.innerText = attempts;
