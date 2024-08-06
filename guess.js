@@ -15,9 +15,9 @@ function startGame() {
   }
    else {
     if (userNum > cpuNum) {
-      quoteDesc.innerText = "Very High, Try Again!!";
+      quoteDesc.innerText = "Your Guess Is Higher Than Actual Number, Try Again!!";
     } else if (userNum < cpuNum) {
-      quoteDesc.innerText = "Very Low, Try Again!!";
+      quoteDesc.innerText = "Your Guess Is Lower Than Actual Number, Try Again!!";
     } else {
       quoteDesc.innerText = `Congratulations! You guessed the number In ${attempts} Failed attempts.`;
     }
